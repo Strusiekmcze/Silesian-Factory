@@ -29,7 +29,7 @@
                   padding: 1px 10px;
                   border: none;
                   border-radius: 10px;
-                  margin: 20% 175px;
+                  margin: auto;
                   position: absolute;
                   background-color:rgba(208, 244, 226, 0.5);
                   cursor: grab;
@@ -43,16 +43,119 @@
                   color: rgba(14, 14, 14, 0.922);
 
             }
+            ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  width: 110px;
+  color: aliceblue;
+  background-color: #080000;
+}
+
+li a {
+  display: block;
+  color:aliceblue;
+  padding: 10px 15px;
+  text-decoration: none;
+  margin-top: 0%;
+  text-align: center;
+}
+
+/* Change the link color on hover */
+li a:hover {
+  background-color: #555;
+  color: white;
+}
+h1 {
+      background-color: black;
+      color: aliceblue;
+      text-align: center;
+      font-family: monospace;
+      padding: 10px 5px;
+}
+.dropbtn {
+  background-color: #4CAF50;
+  color: white;
+  padding: 16px;
+  margin: 0;
+  font-size: 16px;
+  border: none;
+  cursor: pointer;
+}
+
+/* The container <div> - needed to position the dropdown content */
+.dropdown {
+  position: relative;
+  display: inline-block;
+}
+
+/* Dropdown Content (Hidden by Default) */
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #f9f9f9;
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  z-index: 1;
+}
+
+/* Links inside the dropdown */
+.dropdown-content a {
+  color: black;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+}
+
+/* Change color of dropdown links on hover */
+.dropdown-content a:hover {background-color: #f1f1f1}
+
+/* Show the dropdown menu on hover */
+.dropdown:hover .dropdown-content {
+  display: block;
+}
+
+/* Change the background color of the dropdown button when the dropdown content is shown */
+.dropdown:hover .dropbtn {
+  background-color: #3e8e41;
 
             </style>
 </head>
 <body>
+     
       <div class="bg">
+<h1>Silesian Factory</h1>
+            
+            <ul>
+                  <li><a href="#home">Home</a></li>
+                  <li><a href="#news">News</a></li>
+                  <li><a href="#contact">Contact</a></li>
+                  <li><a href="#about">About</a></li>
+                </ul>
 
-            <button class="button"><pre>WHO WE ARE?</pre>
-            </button>
+      
 
-      </div>
-    
-</body>
+      
+
+      <div class="dropdown">
+  <button class="dropbtn">Dropdown</button>
+  <div class="dropdown-content">
+    <a href="#">Link 1</a>
+    <a href="#">Link 2</a>
+    <a href="#">Link 3</a>
+  </div>
+</div></body>
 </html>
+
+
+</style>
+</head>
+
+
+      <button class="button"><pre>WHO WE ARE?</pre>
+      </button>
+
+
+
+
+
